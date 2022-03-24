@@ -8,7 +8,6 @@ country_people = []
 arr_people.each do |person|
   country_people << person if person.has_value?('Japan')
 end
-
 p(country_people)
 
 country_people = []
@@ -19,5 +18,4 @@ arr_people.each do |person|
      country_people << person
    end
 end
-
 p(country_people)
