@@ -6,7 +6,6 @@ total = 0
 arr.each do |v|
   total += v 
 end
-
 puts total
 
 # 組み込みライブラリ
@@ -14,16 +13,12 @@ puts total
 total = arr.sum
 puts total
 
-
 # injectを使えば、このように書くこともできます。
 # the way of inject
 total = arr.inject{ |init, v| init += v; init }
-
 puts total
-
 
 # injectは、このように書くこともできます。
 # the way of inject also
 total = arr.inject(:+)
-
 puts total
