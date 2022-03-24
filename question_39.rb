@@ -10,13 +10,10 @@ old_people = []
 arr_people.each do |person|
   old_people << person if person[:age] > 30
 end
-
 puts(old_people)
-
 
 # selectを使った方法。こちらの方が、意図がわかりやすく、その上シンプルに書けます。
 # the way of map. This way is easy to read and write.
 old_people = []
 old_people = arr_people.select{ |person| person[:age] > 30 }
-
 puts(old_people)
