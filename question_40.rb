@@ -7,5 +7,4 @@ arr_people = [{ name: 'Taro_1', age: 20, height: 180, weight: 60, country: 'Japa
              ]
 
 arr_new_people = arr_people.sort_by{ |people| [people[:height], -people[:age]] }
-
 puts(arr_new_people)
