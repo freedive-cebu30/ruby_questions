@@ -15,5 +15,5 @@ puts max_value
 
 # injectを使えば、このように書くこともできます
 # the way of inject
-total = arr.inject{ |init, v| init = v if init < v; init }
-puts total
+max_value2 = arr.inject{ |init, v| init = v if init < v; init }
+puts max_value2
